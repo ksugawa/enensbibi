@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background: var(#F8F7F4);
+    font-size: 16px;
+    line-height: 1.8;
+    color: var(--font-black);
+
+}
+
+:root {
+    --color-bg-front: #F8F7F4;
+    --font-black: #0D0C22;
+    --font-white: #fafafa;
+    --color-black: #0D0C22;
+    --color-white: #fafafa;
+
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    vertical-align: bottom;
+    object-fit: contain;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+aside {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+section {
+    overflow: hidden;
+}
+
+.flex-r {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.font-en {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.contact-btn {
+    border-radius: 999px;
+    background: var(--color-black);
+    color: var(--font-white);
+    padding: 0px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+}
+
+/**================================
+    aside
+================================**/
+
+.hamburger-btn,
+.hamburger-btn span,
+.icon-serach,
+.icon-mail,
+.icon-instagram {
+    cursor: pointer;
+    width: 32px;
+}
+
+.hamburger-btn {
+    position: relative;
+    height: auto;
+}
+
+.hamburger-btn span {
+    display: inline-block;
+    transition: all .4s;
+    position: absolute;
+    height: 1.5px;
+    background: var(--color-black);
+    border-radius: 8px
+}
+
+.hamburger-btn span:first-child {
+    top: 0;
+}
+
+.hamburger-btn span:nth-child(2) {
+    top: 7px;
+}
+
+.hamburger-btn.active span:first-child {
+    -webkit-transform: translateY(10px) rotate(-315deg);
+    transform: translateY(10px) rotate(-315deg);
+}
+
+.hamburger-btn.active span:nth-child(2) {
+    -webkit-transform: translateY(-10px) rotate(315deg);
+    transform: translateY(-10px) rotate(315deg);
+}
+
+/**================================
+    fv
+================================**/
+
+/**================================
+    work
+================================**/
+
+/**================================
+    contact
+================================**/
+
+#contact {
+    padding: 70px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**================================
+    footer
+================================**/
+
+.copy-right {
+    font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+    .fv .flex-r li {
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .fv .flex-r li {
+    }
+}
+
